@@ -3,7 +3,7 @@ import axiosClient from './axiosClient';
 const API_VERSION = '/api/v1';
 
 const isEmail = (input: string): boolean => {
-  const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(input);
 };
 
